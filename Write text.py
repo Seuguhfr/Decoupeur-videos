@@ -35,14 +35,15 @@ def get_multiline_text():
 
 def write(description):
     # Récupérer le texte saisi par l'utilisateur
-    text_to_type = "#AnimalAntics #FunnyFurballs #laugh #HilariousPets #hilariouspetstiktoktv #CuteAndFunny #smilesquad😝 #FurryFunnies #GiggleGang #krazychuckle #PetHumor #adorable #bell #youngzany #funnyfriends #therealquirkyone #AmusingAnimals #joyful #cutenessoverloaded🥰🥰🥰 #chort #guffadigang #cheerful #PlayfulPaws #wildliferehab #grin"
+    text_to_type = "#laugh #hilariouspetstiktoktv #smilesquad😝 #PetHumor #adorable #bell #funnyfriends #therealquirkyone #joyful #wildliferehab #grin"
 
     # Écrire le texte avec le clavier
     keyboard.write(description + '\n')
+    time.sleep(2)
     words = text_to_type.split()
     for word in words:
         keyboard.write(word)
-        time.sleep(1+len(word)*0.01)  # Délai supplémentaire après chaque mot (ajustez si nécessaire)
+        time.sleep(1.5+len(word)*0.02)  # Délai supplémentaire après chaque mot (ajustez si nécessaire)
         keyboard.press_and_release('enter')
 
 if __name__ == "__main__":

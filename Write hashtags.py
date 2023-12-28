@@ -3,7 +3,7 @@ import keyboard
 
 def write():
     # Récupérer le texte saisi par l'utilisateur
-    text_to_type = "#AnimalAntics #FunnyFurballs #laugh #HilariousPets #hilariouspetstiktoktv #CuteAndFunny #smilesquad😝 #FurryFunnies #GiggleGang #krazychuckle #PetHumor #adorable #bell #youngzany #funnyfriends #therealquirkyone #AmusingAnimals #joyful #cutenessoverloaded🥰🥰🥰 #chort #guffadigang #cheerful #PlayfulPaws #wildliferehab #grin"
+    text_to_type = "#AnimalAntics #FunnyFurballs #laugh #HilariousPets #hilariouspetstiktoktv #CuteAndFunny #smilesquad😝 #FurryFunnies #GiggleGang #krazychuckle #PetHumor #adorable #bell #youngzany #funnyfriends #therealquirkyone #AmusingAnimals #joyful #cutenessoverloaded🥰🥰🥰 #chort #guffadigang #cheerful #wildliferehab #grin"
 
     # Écrire le texte avec le clavier
     words = text_to_type.split()
