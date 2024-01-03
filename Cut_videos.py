@@ -43,12 +43,17 @@ def redimensionner_video(video_path):
     if ratio == 9 / 16:
         return video_path
     
+    print(f"Ratio de la vidéo : {ratio}")
+    print(f"Largeur : {largeur}, Hauteur : {hauteur}")
+    
     print("Redimensionnement de la vidéo...")
     
+    nouvelle_largeur = int(hauteur * (9 / 16))
+
     ffmpeg_command = [
         "ffmpeg",
         "-i", video_path,
-        "-filter:v", "crop=iw/(16/9)^2:ih",
+        "-vf", f"crop={nouvelle_largeur}:{hauteur}",
         "original.mp4"
     ]
 
@@ -164,4 +169,7 @@ video_a_analyser = choisir_video()
 video_path = redimensionner_video(video_a_analyser)
 framerate = get_frame_rate(video_path)
 changements_scene = detecter_changements_scene(video_path)
-decouper_et_enregistrer_videos_ffmpeg(video_path, changements_scene)
+# print la durée moyenne entre deux changements de scène
+print(f"Durée moyenne entre deux changements de scène : {numpy.mean(numpy.diff(changements_scene)) / framerate} sec")
+duree_min = int(input("Durée minimale d'une vidéo (en sec) : ")) or 15
+decouper_et_enregistrer_videos_ffmpeg(video_path, changements_scene, duree_min)
