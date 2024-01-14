@@ -151,7 +151,7 @@ def decouper_et_enregistrer_videos_ffmpeg(video_path: str, changements_scene: li
                 "ffmpeg",
                 "-i", video_path,
                 "-ss", frame_to_time(dernière_coupure, framerate),
-                "-to", frame_to_time(instant - 1, framerate),
+                "-to", frame_to_time(instant - 2, framerate),
                 "-c:v", "libx264",
                 "-c:a", "aac",
                 f"Output/{i + 1}.mp4"

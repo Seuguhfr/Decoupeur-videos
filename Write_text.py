@@ -35,7 +35,7 @@ def get_multiline_text():
 
 def write(description):
     # Récupérer le texte saisi par l'utilisateur
-    text_to_type = "#laugh #hilariouspetstiktoktv #smilesquad😝 #PetHumor #adorable #bell #funnyfriends #therealquirkyone #joyful #wildliferehab #grin"
+    text_to_type = "#funny #laugh #pets #adorable #animals #cats #cat #funnyanimals #dogs #funnyanimalseverydays #dog #puppy"
 
     # Écrire le texte avec le clavier
     keyboard.write(description + '\n')

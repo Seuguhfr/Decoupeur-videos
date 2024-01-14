@@ -2,14 +2,6 @@ Lundi : 12h, 16h.
 Mardi : 8h, 15h.
 Mercredi : 6h, 14h.
 Jeudi : 5h, 18h.
-Vendredi : 1h, 11h, 19h.
-Samedi : 17h, 20h.
-Dimanche : 1h, 13h, 22h.
-
-Posted :
-29/12 1
-29/12 11
-19/12 19
-30/12 17
-30/12 20
-31/12 1
+Vendredi : 11h, 19h.
+Samedi : 9h, 17h.
+Dimanche : 9h, 13h, 22h.
